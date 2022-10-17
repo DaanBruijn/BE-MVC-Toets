@@ -23,7 +23,7 @@ class RichestPersons extends Controller
                                 <td>$value->Networth</td>
                                 <td>$value->Age</td>
                                 <td>$value->Company</td>
-                                <td><a href='" . URLROOT . "/richestPersons/delete/$value->id'>X</a></td>
+                                <td><a href='" . URLROOT . "/richestPersons/delete/$value->id'>x </a></td>
                         </tr>";
         }
 
