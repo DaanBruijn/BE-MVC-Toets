@@ -15,7 +15,7 @@
     <table border="1">
         <thead>
             <th>Naam</th>
-            <th>Networth</th>
+            <th>Vermogen</th>
             <th>Leeftijd</th>
             <th>Bedrijf</th>
             <th>Delete</th>
