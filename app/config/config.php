@@ -3,7 +3,7 @@
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
-define('DB_NAME', 'be-mvcdb');
+define('DB_NAME', 'mvc-oop-toets');
 
 // Document ROOT
 define('ROOT', $_SERVER['DOCUMENT_ROOT']);
@@ -12,10 +12,10 @@ define('ROOT', $_SERVER['DOCUMENT_ROOT']);
 define('APPROOT', ROOT . '/app');
 
 // Site URL
-define('URLROOT', 'http://be-mvcframework.local/');
+define('URLROOT', 'http://mvc-oop-toets.local/');
 
 // Site Name
-define('SITENAME', 'MVC-Framework-BE');
+define('SITENAME', 'MVC-Toets-BE');
 
 // echo SITENAME;
 // echo APPROOT;
