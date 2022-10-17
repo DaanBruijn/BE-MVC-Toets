@@ -1,6 +1,6 @@
 <?php
 
-class Countries extends Controller
+class RichestPersons extends Controller
 {
     private $richestPeopleModel;
 
@@ -9,7 +9,7 @@ class Countries extends Controller
         $this->richestPeopleModel = $this->model('RichestPeople');
     }
 
-    public function index($richestpeople = null, $age = null)
+    public function index($richestPeople = null, $age = null)
     {
         //laat de model de gegevens uit de database halen vie de getRichestPeople method.
         $records = $this->richestPeopleModel->getRichestPeople();
@@ -23,7 +23,7 @@ class Countries extends Controller
                                 <td>$value->Networth</td>
                                 <td>$value->Age</td>
                                 <td>$value->Company</td>
-                                <td><a href='" . URLROOT . "/countries/delete/$value->id'>Delete</a></td>
+                                <td><a href='" . URLROOT . "/richestpeople/delete/$value->id'>Delete</a></td>
                         </tr>";
         }
 
@@ -32,7 +32,7 @@ class Countries extends Controller
             'title' => "De Vijf Rijkste mensen ter wereld",
             'rows' => $rows
         ];
-        $this->view('richestpeople/index', $data);
+        $this->view('richestPeople/index', $data);
     }
 
     public function delete($id)
@@ -41,7 +41,7 @@ class Countries extends Controller
         $data = [
             'deleteStatus' => "<h2>Het record met id = $id is succesvol verwijderd.</h2>"
         ];
-        $this->view("richestpeople/delete", $data);
-        header("Refresh:2; url=" . URLROOT . "/richestpeople/index");
+        $this->view("richestPeople/delete", $data);
+        header("Refresh:2; url=" . URLROOT . "/richestPeople/index");
     }
 }

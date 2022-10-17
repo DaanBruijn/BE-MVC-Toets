@@ -15,7 +15,6 @@ class RichestPeople
         return $result;
     }
 
-
     public function deleteRichestPeople($id)
     {
         $this->db->query("DELETE from `RichestPeople` where `id` = :id");
