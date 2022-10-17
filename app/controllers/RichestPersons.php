@@ -23,7 +23,7 @@ class RichestPersons extends Controller
                                 <td>$value->Networth</td>
                                 <td>$value->Age</td>
                                 <td>$value->Company</td>
-                                <td><a href='" . URLROOT . "/richestpeople/delete/$value->id'>Delete</a></td>
+                                <td><a href='" . URLROOT . "/richestPersons/delete/$value->id'>Delete</a></td>
                         </tr>";
         }
 
@@ -32,7 +32,7 @@ class RichestPersons extends Controller
             'title' => "De Vijf Rijkste mensen ter wereld",
             'rows' => $rows
         ];
-        $this->view('richestPeople/index', $data);
+        $this->view('richestPersons/index', $data);
     }
 
     public function delete($id)
@@ -41,7 +41,7 @@ class RichestPersons extends Controller
         $data = [
             'deleteStatus' => "<h2>Het record met id = $id is succesvol verwijderd.</h2>"
         ];
-        $this->view("richestPeople/delete", $data);
-        header("Refresh:2; url=" . URLROOT . "/richestPeople/index");
+        $this->view("richestpersons/delete", $data);
+        header("Refresh:2; url=" . URLROOT . "/richestPersons/index");
     }
 }

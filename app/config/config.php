@@ -12,7 +12,7 @@ define('ROOT', $_SERVER['DOCUMENT_ROOT']);
 define('APPROOT', ROOT . '/app');
 
 // Site URL
-define('URLROOT', 'http://mvc-oop-toets.local/');
+define('URLROOT', 'http://mvc-oop-toets.local');
 
 // Site Name
 define('SITENAME', 'MVC-Toets-BE');

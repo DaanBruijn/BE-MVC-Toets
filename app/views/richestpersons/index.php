@@ -12,13 +12,12 @@
 
 <body>
     <h1><?= $data['title']; ?></h1>
-    <table>
+    <table border="1">
         <thead>
-            <th>Landnaam</th>
-            <th>Hoofdstad</th>
-            <th>Continent</th>
-            <th>Bevolking</th>
-            <th>Update</th>
+            <th>Naam</th>
+            <th>Networth</th>
+            <th>Leeftijd</th>
+            <th>Bedrijf</th>
             <th>Delete</th>
         </thead>
         <tbody><?= $data['rows']; ?></tbody>
